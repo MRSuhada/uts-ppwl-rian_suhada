@@ -45,7 +45,7 @@
                             <td>{{ $loop->iteration + ($products->currentPage() - 1) * $products->perPage() }}</td>
                             <td>
                                 @if($product->foto)
-                                <img src="{{ asset('assets/img/default-product.jpg') }}"
+                                <img src="{{ asset('assets/img/default-product.png') }}"
                                     alt="{{ $product->nama }}" class="img-thumbnail" width="80" />
                                 @endif
                             </td>

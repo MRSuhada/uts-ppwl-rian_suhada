@@ -36,6 +36,11 @@
                 <div data-i18n="Master Data">Master Data</div>
             </a>
             <ul class="menu-sub">
+                <li class="menu-item {{ request()->routeIs('category.*') ? 'active' : '' }}">
+                    <a href="{{ route('category.index') }}" class="menu-link">
+                        <div data-i18n="Kategori">Kategori</div>
+                    </a>
+                </li>
                 <li class="menu-item {{ request()->routeIs('products.*') ? 'active' : '' }}">
                     <a href="{{ route('products.index') }}" class="menu-link">
                         <div data-i18n="Produk">Produk</div>
